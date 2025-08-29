@@ -19,7 +19,7 @@ void loop()
  temp = analogRead(A1);
  int celsius = map(((temp - 20) * 3.04), 0, 1023, -40, 125);
   luz=map(luz, 712, 1022, 0, 255);
-  if(luz <= 178 && luz >= 76){  
+  if(76 < luz < 176){  
   if (celsius >= 90){
    digitalWrite(R, HIGH);
    digitalWrite(G, LOW); 
